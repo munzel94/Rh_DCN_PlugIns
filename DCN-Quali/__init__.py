@@ -1,7 +1,8 @@
 import logging
 from eventmanager import Evt
 from Results import RaceClassRankMethod
-from RHUI import UIField, UIFieldType
+from RHUI import UIField, UIFieldType, UIFieldSelectOption
+from HeatGenerator import HeatGenerator, HeatPlan, HeatPlanSlot, SeedMethod
 from RHRace import StartBehavior
 
 logger = logging.getLogger(__name__)
@@ -90,7 +91,8 @@ def dcn_Quali(rhapi, race_class, args):
 
     # Sortiere Leaderboard
     leaderboard = sorted(leaderboard, key=lambda x: (-x['sumLapsCount'], x['sumTopLaptimes_raw']))
-
+    for i, row in enumerate(leaderboard, start=1):
+        row['position'] = i
     # Metadaten für die Anzeige
     meta = {
         'method_label': f"Best {runs_limit} Heats",
@@ -118,6 +120,7 @@ def register_handlers(args):
             ]
         )
     )
+    
 
 # Plugin-Initialisierung
 def initialize(rhapi):

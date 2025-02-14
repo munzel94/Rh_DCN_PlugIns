@@ -84,7 +84,7 @@ def generateLadder(rhapi, generate_args=None):
             ]
         ),
         HeatPlan(
-            rhapi.__("1/8-Winner-Finale") + " 6 (E1)",
+            rhapi.__("Winner") + " 6 (E1)",
             [
                 HeatPlanSlot(SeedMethod.INPUT, 3),
                 HeatPlanSlot(SeedMethod.INPUT, 14),
@@ -93,7 +93,7 @@ def generateLadder(rhapi, generate_args=None):
             ]
         ),
         HeatPlan(
-            rhapi.__("1/8-Winner-Finale") + " 7 (E1)",
+            rhapi.__("Winner") + " 7 (E1)",
             [
                 HeatPlanSlot(SeedMethod.INPUT, 5),
                 HeatPlanSlot(SeedMethod.INPUT, 12),
@@ -102,7 +102,7 @@ def generateLadder(rhapi, generate_args=None):
                 HeatPlanSlot(SeedMethod.INPUT, 35)
             ]
         ),        HeatPlan(
-            rhapi.__("1/8-Winner-Finale") + " 8 (E1)",
+            rhapi.__("Winner") + " 8 (E1)",
             [
                 HeatPlanSlot(SeedMethod.INPUT, 7),
                 HeatPlanSlot(SeedMethod.INPUT, 10),
@@ -110,6 +110,205 @@ def generateLadder(rhapi, generate_args=None):
                 HeatPlanSlot(SeedMethod.INPUT, 26)
             ]
         ),
-
-
-    if total_pilots>18:
+        HeatPlan(
+            rhapi.__("Looser") + " 9 (E1)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 0),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 0),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 5, 0),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 1),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 1)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 10 (E1)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 2),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 2),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 5, 2),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 3),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 3)
+            ]
+        ),
+                HeatPlan(
+            rhapi.__("Looser") + " 11 (E1)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 4),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 4),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 5, 4),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 5),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 5)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 12 (E1)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 6),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 6),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 5, 6),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 7),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 7)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Winner") + " 13 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 0),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 0),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 1),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 1)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Winner") + " 14 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 2),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 2),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 3),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 3)
+            ]
+        ),
+         HeatPlan(
+            rhapi.__("Winner") + " 15 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 4),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 4),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 5),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 5)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Winner") + " 16 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 6),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 6),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 7),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 7)
+            ]
+        ),
+          HeatPlan(
+            rhapi.__("Looser") + " 17 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 12),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 12),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 8),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 8)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 18 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 13),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 13),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 9),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 9)
+            ]
+        ),
+                HeatPlan(
+            rhapi.__("Looser") + " 19 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 14),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 14),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 10),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 10)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 20 (E2)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 15),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 15),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 11),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 11)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Winner") + " 21 (E3)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 12),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 12),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 13),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 13)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 22 (E3)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 16),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 16),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 17),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 17)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Winner") + " 23 (E3)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 14),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 14),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 15),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 15)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 24 (E3)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 18),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 18),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 19),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 19)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 25 (E4)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 20),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 20),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 21),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 21)
+            ]
+        ),        
+        HeatPlan(
+            rhapi.__("Looser") + " 26 (E4)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 22),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 22),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 23),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 23)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 27 (E5)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 24),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 24),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 25),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 25)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Winner") + " 28 (E6)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 20),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 20),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 22),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 22)
+            ]
+        ),
+        HeatPlan(
+            rhapi.__("Looser") + " 29 (E6)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 3, 27),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 4, 27),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 26),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 26)
+            ]
+        ),
+                HeatPlan(
+            rhapi.__("Finale") + " 30 (E7)",
+            [
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 27),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 27),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 1, 28),
+                HeatPlanSlot(SeedMethod.HEAT_INDEX, 2, 28)
+            ]
+        )]
